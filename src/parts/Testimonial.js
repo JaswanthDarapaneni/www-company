@@ -35,7 +35,7 @@ export default function Testimonial({ data }) {
         className="mySwiper"
         loop={true}
         navigation={true}
-      // autoplay={{ delay: 3000, disableOnInteraction: false }}
+        autoplay={{ delay: 4000, disableOnInteraction: false }}
       >
         {data.map((item) => (
           <SwiperSlide key={item.id}>
