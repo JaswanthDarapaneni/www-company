@@ -7,7 +7,7 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
 
-import Fade from 'react-awesome-reveal';
+import { Fade } from 'react-awesome-reveal';
 // eslint-disable-next-line import/no-extraneous-dependencies
 import * as emailjs from '@emailjs/browser';
 // eslint-disable-next-line import/no-extraneous-dependencies
@@ -57,14 +57,19 @@ export const DiscussForm = (actions) => {
 
   return (
     <section className="flex flex-col container mx-auto mt-10 justify-center">
-      <Fade bottom>
-        <h1 className="text-5xl text-theme-blue text-center font-bold">Lets Discuss</h1>
 
+      <Fade direction="down" triggerOnce>
+        <h1 className="text-5xl text-theme-blue text-center font-bold">Lets Discuss</h1>
+      </Fade>
+
+      <Fade direction="up" triggerOnce>
         <p className="font-light text-lg text-gray-400 text-center mb-12">
           {/* eslint-disable-next-line react/no-unescaped-entities */}
           Please fill out the form below to discuss your project and we'll get back to you in less than 24 hours.
         </p>
+      </Fade>
 
+      <Fade direction="up" triggerOnce>
         <div className="flex flex-col">
           <div className="flex flex-col sm:flex-row mx-auto">
             <Form
@@ -119,7 +124,6 @@ export const DiscussForm = (actions) => {
               onChange={actions.onChange}
             />
           </div>
-
           <Button
             className="text-xl mx-auto px-12 py-3 mt-5 bg-theme-purple text-white rounded-full border-2 border-theme-purple hover:bg-dark-theme-purple border-purple-800 transition duration-200 focus:outline-none"
             type="button"

@@ -12,7 +12,7 @@ import 'swiper/swiper-bundle.css';
 
 export default function Testimonial({ data }) {
   (
-    <Fade bottom>
+    <Fade bottom triggerOnce>
       <section className="container mx-auto">
         <h1 className="text-5xl text-theme-blue text-center font-bold">Testimonials</h1>
 

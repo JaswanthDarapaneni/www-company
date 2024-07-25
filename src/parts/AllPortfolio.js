@@ -5,7 +5,7 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
 
-import Fade from 'react-awesome-reveal';
+import { Fade } from 'react-awesome-reveal';
 
 // eslint-disable-next-line import/no-extraneous-dependencies
 import {
@@ -42,9 +42,9 @@ export default function AllPortfolio({ data }) {
             <div className="grid grid-cols-2 sm:grid-cols-3 sm:gap-2 xl:gap-8 justify-items-center">
               {
                 mobile.map((item, index) => (
-                  <Fade bottom delay={500 * index} key={index}>
+                  <Fade triggerOnce direction="up" delay={500 * index} key={index}>
                     <Button type="link" href={`/project/${item.id}`}>
-                      <div className="group rounded-2xl shadow-xl w-auto w-11/12 m-3 transform transition duration-500 hover:scale-110 portofolio-card">
+                      <div className="group rounded-2xl shadow-xl w-auto m-3 transform transition duration-500 hover:scale-110 portofolio-card">
                         <div className="relative">
                           <img src={item.imageUrl} alt="Portfolio" className="rounded-t-2xl z-0" />
                           <div className="absolute flex w-full h-full top-0 opacity-0 bg-black justify-center rounded-t-2xl rounded-b img-hover">
@@ -100,7 +100,7 @@ export default function AllPortfolio({ data }) {
             <div className="grid grid-cols-2 sm:grid-cols-3 sm:gap-2 xl:gap-8 justify-items-center">
               {
                 data.map((item, index) => (
-                  <Fade bottom delay={500 * index} key={index}>
+                  <Fade bottom triggerOnce delay={500 * index} key={index}>
                     <Button type="link" href={`/project/${item.id}`}>
                       <div className="group rounded-2xl shadow-xl w-auto w-11/12 m-3 transform transition duration-500 hover:scale-110 portofolio-card">
                         <div className="relative">

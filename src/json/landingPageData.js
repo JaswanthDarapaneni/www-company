@@ -23,14 +23,17 @@ export const Services = [
   {
     title: 'Web Development',
     imageUrl: Web,
+    animation: 'left',
   },
   {
     title: 'Mobile Development',
     imageUrl: Mobile,
+    animation: 'up',
   },
   {
     title: 'UI/UX Design',
     imageUrl: UIUX,
+    animation: 'right',
   },
 ];
 

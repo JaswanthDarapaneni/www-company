@@ -15,7 +15,7 @@ export default function PortfolioDetail({ data }) {
   if (data === null) {
     return (
       <section className="container mx-auto">
-        <Fade bottom>
+        <Fade bottom triggerOnce>
           <div className="flex flex-col w-full justify-center">
             <div className="flex w-full justify-center">
               <img src={NotFound} alt="Not Found" className="sm:w-3/4 xl:w-5/12 mt-5" />
@@ -48,7 +48,7 @@ export default function PortfolioDetail({ data }) {
       {
         data.map((item) => (
           <div className="flex flex-col mt-8 justify-center">
-            <Fade bottom>
+            <Fade bottom triggerOnce>
               <h1 className="text-5xl text-theme-blue text-center font-bold">{item.title}</h1>
 
               <p className="font-light text-xl text-gray-400 text-center mb-10">
@@ -56,13 +56,13 @@ export default function PortfolioDetail({ data }) {
               </p>
             </Fade>
 
-            <Fade bottom delay={300 * 1}>
+            <Fade bottom delay={300 * 1} triggerOnce>
               <div className="flex justify-center xl:mb-6">
                 <img src={item.imageUrl} alt="Project" className="flex w-4/5 sm:w-4/6" />
               </div>
             </Fade>
 
-            <Fade bottom delay={300 * 1}>
+            <Fade bottom delay={300 * 1} triggerOnce>
               <div className="flex flex-col mt-16 mb-12 mx-8 sm:mx-16 xl:mx-28">
                 <h1 className="text-3xl text-theme-blue font-bold mb-3">
                   Project Detail

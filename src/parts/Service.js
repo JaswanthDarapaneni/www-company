@@ -4,15 +4,16 @@
 
 import React from 'react';
 
-import Fade from 'react-awesome-reveal';
+import { Fade } from 'react-awesome-reveal';
 
 export default function Service({ data }) {
   return (
     <div className="bg-gray-50">
       <div className="container mx-auto pt-20 pb-28">
-        <Fade bottom>
+        <Fade direction="right" triggerOnce>
           <h1 className="text-5xl text-theme-blue text-center font-bold">Our Service</h1>
-
+        </Fade>
+        <Fade direction="left" triggerOnce>
           <p className="font-light text-lg text-gray-400 text-center mb-12">
             We are ready to scale up your business with our great service.
           </p>
@@ -22,7 +23,7 @@ export default function Service({ data }) {
           {
             data.map((item, index) => (
               // eslint-disable-next-line react/no-array-index-key
-              <Fade bottom delay={500 * index} key={index}>
+              <Fade direction={item.animation} delay={500 * index} key={index} triggerOnce>
                 <div>
                   <div className="bg-white group rounded-2xl shadow-2xl border border-light-theme-purple transform transition duration-500 hover:scale-105">
                     <img src={item.imageUrl} alt="Service" className="w-full rounded-t-2xl" />
