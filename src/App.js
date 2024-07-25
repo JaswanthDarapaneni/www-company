@@ -1,24 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+/* eslint-disable import/extensions */
+/* eslint-disable react/jsx-filename-extension */
+/* eslint-disable react/react-in-jsx-scope */
+/* eslint-disable-next-line no-unused-vars */
+import { Route, Routes } from 'react-router-dom';
+
+import LandingPage from 'pages/LandingPage';
+import ProjectPage from 'pages/ProjectPage';
+import NotFoundPage from 'pages/NotFoundPage';
+import TeamPage from 'pages/TeamPage';
+
+import { ProjectDetailPage } from 'pages/ProjectDetailPage';
+import { DiscussProjectPage } from 'pages/DiscussProjectPage';
+
+import './assets/css/styles.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Routes>
+        <Route exact path="/" element={<LandingPage />} />
+        <Route path="/project" element={<ProjectPage />} />
+        <Route exact path="/project/:id" element={<ProjectDetailPage />} />
+        <Route exact path="/team" element={<TeamPage />} />
+        <Route exact path="/discuss-project" element={<DiscussProjectPage />} />
+        <Route path="**" element={<NotFoundPage />} />
+      </Routes>
+    </>
   );
 }
 
