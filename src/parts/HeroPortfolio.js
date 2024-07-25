@@ -6,7 +6,7 @@ import React from 'react';
 
 import { Fade } from 'react-awesome-reveal';
 
-import heroPortfolio from 'assets/images/portfolioHero.png';
+import heroPortfolio from 'assets/images/hero/portfolioHero.png';
 
 export default function HeroPortfolio() {
   return (

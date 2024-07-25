@@ -5,7 +5,7 @@ import React from 'react';
 
 import { Fade } from 'react-awesome-reveal';
 
-import Team from 'assets/images/team.png';
+import Team from 'assets/images/hero/team.png';
 
 export default function HeroTeam() {
   return (
@@ -23,8 +23,8 @@ export default function HeroTeam() {
           </p>
         </Fade>
       </div>
-      <div className="flex pt-5 w-full justify-center items-center order-first md:w-full lg:order-last lg:w-full">
-        <Fade direction="top-right" triggerOnce delay={200}>
+      <div className="flex pt-5 w-full justify-center items-center order-first md:w-full lg:order-last lg:w-1/2">
+        <Fade direction="top-right" triggerOnce delay={300}>
           <img src={Team} alt="Hero" />
         </Fade>
       </div>

@@ -6,7 +6,7 @@ import { Fade } from 'react-awesome-reveal';
 
 import Button from '../elements/Button';
 
-import BuildWebsite from '../assets/images/BuildWebsite.png';
+import BuildWebsite from '../assets/images/hero/BuildWebsite.png';
 
 export default function Hero() {
   return (

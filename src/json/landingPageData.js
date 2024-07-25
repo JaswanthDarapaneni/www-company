@@ -19,6 +19,25 @@ import Collaborative from '../assets/images/Advantages/Collaborative.png';
 import Management from '../assets/images/Advantages/Management.png';
 import Favorite from '../assets/images/Advantages/Favorite.png';
 
+// Testimonials
+import Sasha from '../assets/images/Testimonials/Sasha.jpg';
+import Reiner from '../assets/images/Testimonials/Reiner.jpg';
+import Kruger from '../assets/images/Testimonials/Kruger.jpg';
+
+// TeamMembers
+import CEO from '../assets/images/TeamMembers/CEO.jpg';
+import HRD from '../assets/images/TeamMembers/HRD.jpg';
+import Finance from '../assets/images/TeamMembers/Finance.jpg';
+import ProjectManager from '../assets/images/TeamMembers/Project-manager.jpg';
+import Frontend1 from '../assets/images/TeamMembers/Frontend1.jpg';
+import Frontend2 from '../assets/images/TeamMembers/Frontend2.jpg';
+import Backend1 from '../assets/images/TeamMembers/Backend1.jpg';
+import Backend2 from '../assets/images/TeamMembers/Backend2.jpg';
+import Mobile1 from '../assets/images/TeamMembers/Mobile1.jpg';
+import Mobile2 from '../assets/images/TeamMembers/Mobile2.jpg';
+import UIUX1 from '../assets/images/TeamMembers/UIUX1.jpg';
+import UIUX2 from '../assets/images/TeamMembers/UIUX2.jpg';
+
 export const Services = [
   {
     title: 'Web Development',
@@ -130,22 +149,25 @@ export const Advantages = [
 ];
 export const Testimonials = [
   {
+    id: 1,
     name: 'Sasha Rose',
     company: 'Owner, Surveyor Corps',
     testimoni: 'Thanks for Racxstudio, you guys are the best! Keep up the great work!',
-    imageUrl: 'assets/images/Sasha.jpg',
+    imageUrl: Sasha,
   },
   {
+    id: 2,
     name: 'Kruger Khan',
     company: 'Director, Shultan Oil',
     testimoni: 'I just wanted to let you know that it’s been great working with Racxstudio.',
-    imageUrl: 'assets/images/Kruger.jpg',
+    imageUrl: Kruger,
   },
   {
+    id: 3,
     name: 'Reiner John',
     company: 'CEO, Marley CO',
     testimoni: 'Racxstudio is so great. Thank you so much for a job well done.',
-    imageUrl: 'assets/images/Reiner.jpg',
+    imageUrl: Reiner,
   },
 ];
 
@@ -153,61 +175,61 @@ export const TeamMembers = [
   {
     name: 'Rach David',
     position: 'CEO',
-    imageUrl: 'assets/images/CEO.jpg',
+    imageUrl: CEO,
   },
   {
     name: 'Pauline Sydney',
     position: 'HRD',
-    imageUrl: 'assets/images/HRD.jpg',
+    imageUrl: HRD,
   },
   {
     name: 'Granger Watterson',
     position: 'Finance',
-    imageUrl: 'assets/images/Finance.jpg',
+    imageUrl: Finance,
   },
   {
     name: 'Tom Jimmy',
     position: 'Project Manager',
-    imageUrl: 'assets/images/Project-manager.jpg',
+    imageUrl: ProjectManager,
   },
   {
     name: 'Jim Hendrix',
     position: 'Front-end Developer',
-    imageUrl: 'assets/images/Frontend1.jpg',
+    imageUrl: Frontend1,
   },
   {
     name: 'Calvin Max',
     position: 'Front-end Developer',
-    imageUrl: 'assets/images/Frontend2.jpg',
+    imageUrl: Frontend2,
   },
   {
     name: 'Hawkins Jim',
     position: 'Back-end Developer',
-    imageUrl: 'assets/images/Backend1.jpg',
+    imageUrl: Backend1,
   },
   {
     name: 'Don Bizaro',
     position: 'Back-end Developer',
-    imageUrl: 'assets/images/Backend2.jpg',
+    imageUrl: Backend2,
   },
   {
     name: 'Bill Markinson',
     position: 'Mobile Developer',
-    imageUrl: 'assets/images/Mobile1.jpg',
+    imageUrl: Mobile1,
   },
   {
     name: 'Igor Kavarov',
     position: 'Mobile Developer',
-    imageUrl: 'assets/images/Mobile2.jpg',
+    imageUrl: Mobile2,
   },
   {
     name: 'Freddie Curl',
     position: 'UI/UX Designer',
-    imageUrl: 'assets/images/UIUX2.jpg',
+    imageUrl: UIUX2,
   },
   {
     name: 'Monica Lovegood',
     position: 'UI/UX Designer',
-    imageUrl: 'assets/images/UIUX1.jpg',
+    imageUrl: UIUX1,
   },
 ];
