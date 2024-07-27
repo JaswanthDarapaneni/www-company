@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 /* eslint-disable react/require-default-props */
 /* eslint-disable react/button-has-type */
 /* eslint-disable react/jsx-filename-extension */
