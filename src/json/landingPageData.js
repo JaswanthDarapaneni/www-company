@@ -39,6 +39,8 @@ import Mobile2 from '../assets/images/TeamMembers/Mobile2.jpg';
 import UIUX1 from '../assets/images/TeamMembers/UIUX1.jpg';
 import UIUX2 from '../assets/images/TeamMembers/UIUX2.jpg';
 
+const companyName = 'WebMarketCraft';
+
 export const Services = [
   {
     title: 'Web Development',
@@ -51,7 +53,7 @@ export const Services = [
     animation: 'up',
   },
   {
-    title: 'UI/UX Design',
+    title: 'SEO Marketing',
     imageUrl: UIUX,
     animation: 'right',
   },
@@ -153,21 +155,21 @@ export const Testimonials = [
     id: 1,
     name: 'Sasha Rose',
     company: 'Owner, Surveyor Corps',
-    testimoni: 'Thanks for Racxstudio, you guys are the best! Keep up the great work!',
+    testimoni: 'Thanks for WebMarketCraft, you guys are the best! Keep up the great work!',
     imageUrl: Sasha,
   },
   {
     id: 2,
     name: 'Kruger Khan',
     company: 'Director, Shultan Oil',
-    testimoni: 'I just wanted to let you know that it’s been great working with Racxstudio.',
+    testimoni: 'I just wanted to let you know that it’s been great working with WebMarketCraft.',
     imageUrl: Kruger,
   },
   {
     id: 3,
     name: 'Reiner John',
     company: 'CEO, Marley CO',
-    testimoni: 'Racxstudio is so great. Thank you so much for a job well done.',
+    testimoni: 'WebMarketCraft is so great. Thank you so much for a job well done.',
     imageUrl: Reiner,
   },
 ];

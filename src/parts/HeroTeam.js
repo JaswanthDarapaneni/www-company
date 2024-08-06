@@ -9,7 +9,7 @@ import Team from 'assets/images/hero/team.png';
 
 export default function HeroTeam() {
   return (
-    <section className="hero sm:items-center lg:items-start sm:flex-row">
+    <section className="hero pt-20 sm:items-center lg:items-start sm:flex-row">
 
       <div className="w-full sm:w-1/2 flex flex-col px-5 mb-5 sm:mb-0 sm:px-12 sm:mt-6 lg:mt-6 xl:mt-20">
         <Fade direction="up" triggerOnce>
@@ -23,8 +23,8 @@ export default function HeroTeam() {
           </p>
         </Fade>
       </div>
-      <div className="flex pt-5 w-full justify-center items-center order-first md:w-full lg:order-last lg:w-1/2">
-        <Fade direction="top-right" triggerOnce delay={300}>
+      <div className="flex pt-0 w-full justify-center items-center order-first md:w-full lg:order-last lg:w-1/2">
+        <Fade direction="up" triggerOnce delay={300}>
           <img src={Team} alt="Hero" />
         </Fade>
       </div>

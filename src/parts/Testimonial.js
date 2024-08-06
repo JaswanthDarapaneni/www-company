@@ -48,9 +48,12 @@ export default function Testimonial({ data }) {
                   <p className="font-light text-gray-400">{item.company}</p>
                 </div>
               </div>
-              <p className="font-light text-2xl text-gray-400 pl-5 pt-3 pb-1">
-                {item.testimoni}
-              </p>
+              <Fade direction="up" delay={300}>
+                <p className="font-light text-2xl text-gray-400 pl-5 pt-3 pb-1">
+                  {item.testimoni}
+                </p>
+              </Fade>
+
             </div>
           </SwiperSlide>
         ))}

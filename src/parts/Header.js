@@ -6,7 +6,6 @@
 /* eslint-disable react/prop-types */
 import React, { useState } from 'react';
 
-import { Fade } from 'react-awesome-reveal';
 import { Transition } from '@headlessui/react';
 import { useLocation } from 'react-router-dom';
 
@@ -19,10 +18,10 @@ export default function Header() {
   const path = location.pathname;
 
   return (
-    <header className="header">
+    <header className="header w-full">
+
       <div className="flex justify-between px-4 lg:px-0">
         <BrandIcon />
-
         <button className="block text-theme-blue lg:hidden focus:outline-none" onClick={() => setIsCollapse(!isCollapse)}>
           <svg className="w-8 h-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path className={`${isCollapse ? 'hidden' : 'block'}`} strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7" />
@@ -61,7 +60,7 @@ export default function Header() {
         </li>
         <li>
           <Button
-            className="font-medium text-lg mx-auto ml-3 px-6 py-2 bg-theme-purple text-white rounded-full border-2 border-theme-purple hover:bg-dark-theme-purple border-purple-800 transition duration-200"
+            className="font-medium text-lg mx-auto ml-3 px-6 py-2 bg-theme-purple text-white rounded-full border-2 border-theme-purple hover:bg-dark-theme-purple  transition duration-200"
             type="link"
             href="/discuss-project"
           >
@@ -82,7 +81,7 @@ export default function Header() {
         <div className="transition duration-300 ease-in data-[closed]:opacity-0">
 
           {/* <Fade> */}
-          <ul className="z-50 flex flex-col text-theme-blue tracking-widest my-6 absolute bg-white w-full border-b-2 border-gray-300 lg:hidden">
+          <ul className="z-50 flex flex-col text-theme-blue tracking-widest mt-0 absolute bg-white w-full border-b-2 border-gray-300 lg:hidden">
             <li className="py-2 bg-white">
               <Button
                 className={`${path === '/' ? 'active-link' : ''} font-medium px-10 no-underline hover:underline`}
@@ -123,6 +122,7 @@ export default function Header() {
           {/* </Fade> */}
         </div>
       </Transition>
+
     </header>
   );
 }

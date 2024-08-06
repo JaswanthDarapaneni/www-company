@@ -11,7 +11,7 @@ import BuildWebsite from '../assets/images/hero/BuildWebsite.png';
 
 export default function Hero() {
   return (
-    <section className="hero">
+    <section className="hero pt-20">
 
       <div className="w-full lg:w-full xl:pl-12 sm:pr-2 mt-8">
         <h1 className="text-5xl sm:text-6xl text-theme-blue font-bold leading-tight mb-5">

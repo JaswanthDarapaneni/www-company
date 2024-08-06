@@ -1,4 +1,4 @@
-@tailwind base;
+  @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
@@ -9,13 +9,17 @@ section {
 .active-link {
   @apply text-theme-purple;
 }
-
-.header {
-  @apply flex flex-col py-4 mb-4 justify-between;
+.text-gray-400 {
+  @apply text-gray-900;
 }
 
+.header {
+  @apply flex fixed z-10 bg-white flex-col pt-2 mb-0 justify-between;
+}
+
+
 .hero {
-  @apply container px-5 flex flex-col mx-auto;
+  @apply container px-5 pt-20 flex flex-col mx-auto;
 }
 
 .portofolio-card:hover .img-hover {
@@ -24,13 +28,28 @@ section {
 
 @media (min-width: 1024px) {
   .header {
-    @apply container w-full flex-row py-8 px-10 mt-2 mb-4 mx-auto items-center content-center border-b border-gray-100;
+    @apply container fixed z-10 bg-white top-0 w-full flex-row py-2 px-10 mt-0 mb-0 border-r-0 mx-auto items-center content-center border-b border-gray-100;
+  }
+  .text-gray-400 {
+    @apply text-gray-900;
   }
 
   .hero {
     @apply container flex-row mx-auto mt-8;
   }
 }
+
+@media (min-width: 1024px) {
+  .header {
+    max-width: 100%;
+}
+  @media (min-width: 1536px) {
+      .header {
+          max-width: 100%;
+      }
+  }
+}
+
 
 /* Custom styles for Swiper navigation buttons */
 .swiper-button-next,
