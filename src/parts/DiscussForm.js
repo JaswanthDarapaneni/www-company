@@ -56,7 +56,7 @@ export const DiscussForm = (actions) => {
   };
 
   return (
-    <section className="flex flex-col container px-1 pt-20 justify-center">
+    <section className="flex flex-col px-1 pt-20 justify-center">
       <Fade direction="down" triggerOnce>
         <h1 className="text-5xl text-theme-blue text-center font-bold">Lets Discuss</h1>
       </Fade>
@@ -70,7 +70,7 @@ export const DiscussForm = (actions) => {
 
       <Fade direction="up" triggerOnce>
         <div className="flex flex-col items-center ">
-          <div className="flex flex-col sm:flex-col p-4 py-0 xl:w-5/6 lg:w-4/6 w-full mx-auto">
+          <div className="flex flex-col sm:flex-col p-4 py-0 xl:w-4/5 lg:w-4/5 w-full mx-auto">
             <Form
               id="name"
               name="name"
