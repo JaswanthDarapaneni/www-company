@@ -14,17 +14,17 @@ export default function BrandIcon() {
         type="link"
         href="/"
       >
-        <p className="text-theme-blue text-3xl font-medium ">
+        <div className="text-theme-blue text-3xl font-medium ">
           Web
           <span className="text-theme-purple">Market</span>
           <span className="text-theme-purple text-sm">
             {' '}
             Craft
           </span>
-          <p className="tagline pt-0 text-xs theme-gray text-x font-light">
+          <div className="tagline pt-0 text-xs theme-gray text-x font-light">
             Your Satisfaction, Our Craft
-          </p>
-        </p>
+          </div>
+        </div>
       </Button>
 
     </div>

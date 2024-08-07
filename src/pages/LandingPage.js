@@ -7,8 +7,7 @@ import React, { Component } from 'react';
 import {
   Services, Portfolios, Advantages, Testimonials,
 } from 'json/landingPageData';
-// eslint-disable-next-line import/no-extraneous-dependencies
-import { Helmet } from 'react-helmet';
+
 import Header from 'parts/Header';
 import Hero from 'parts/Hero';
 import Service from 'parts/Service';
@@ -26,13 +25,7 @@ export default class LandingPage extends Component {
   render() {
     return (
       <>
-        <Helmet>
-          <meta name="description" content="Top website development companies in India" />
-          <meta
-            name="keywords"
-            content=" E-commerce Platform, Affordable Website Builders, Website Design Services, Digital Dream ,Website Creators,Creativity Professional Website Design, Website Building Platforms, Web Development Services, Digital Success, Best Website Builders, Build Something Amazing, Unique Needs, My Site, mission"
-          />
-        </Helmet>
+
         <Header />
         <Hero />
         <Service data={Services} />
