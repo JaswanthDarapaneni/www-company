@@ -1,4 +1,5 @@
 /* eslint-disable linebreak-style */
+/* eslint-disable no-nested-ternary */
 /* eslint-disable no-useless-escape */
 /* eslint-disable react/destructuring-assignment */
 /* eslint-disable max-len */
@@ -27,14 +28,14 @@ export const DiscussForm = (actions) => {
 
     const templateParams = {
       from_name: `${name} - ${company} ( ${phone} - ${email} )`,
-      to_name: 'Racxstudio',
+      to_name: 'WebMarketCraft',
       message: projectIdea,
     };
 
     if (
-      name !== ''
+      email !== ''
       && company !== ''
-      && email !== ''
+      && name !== ''
       && phone !== ''
       && projectIdea !== ''
     ) {
@@ -51,12 +52,13 @@ export const DiscussForm = (actions) => {
           toast.error(error);
         });
     } else {
-      toast.error('Please fill out the blank form.');
+      toast.error('Please fill out the missing details.');
     }
   };
 
   return (
-    <section className="flex flex-col px-1 pt-20 justify-center">
+    <section className="flex flex-col container mx-auto mt-20 justify-center">
+
       <Fade direction="down" triggerOnce>
         <h1 className="text-5xl text-theme-blue text-center font-bold">Lets Discuss</h1>
       </Fade>
@@ -64,19 +66,19 @@ export const DiscussForm = (actions) => {
       <Fade direction="up" triggerOnce>
         <p className="font-light text-lg text-gray-400 text-center mb-12">
           {/* eslint-disable-next-line react/no-unescaped-entities */}
-          We're excited to learn about your project! Fill out the form below, and our team will reach out to you within 24 hours to discuss your ideas in detail.
+          Please fill out the form below to discuss your project and we'll get back to you in less than 24 hours.
         </p>
       </Fade>
 
       <Fade direction="up" triggerOnce>
-        <div className="flex flex-col items-center ">
-          <div className="flex flex-col sm:flex-col p-4 py-0 xl:w-4/5 lg:w-4/5 w-full mx-auto">
+        <div className="flex flex-col">
+          <div className="flex flex-col sm:flex-row mx-auto">
             <Form
               id="name"
               name="name"
               type="text"
               value={data.name}
-              placeholder="Full Name"
+              placeholder="Your name"
               className=""
               onChange={actions.onChange}
             />
@@ -85,41 +87,41 @@ export const DiscussForm = (actions) => {
               name="company"
               type="text"
               value={data.company}
-              placeholder="Company Name"
+              placeholder="Your company"
               className=""
               onChange={actions.onChange}
             />
           </div>
 
-          <div className="flex flex-col sm:flex-col w-full xl:w-4/5 lg:w-4/5 p-4 mx-auto">
+          <div className="flex flex-col sm:flex-row mx-auto">
             <Form
               id="email"
               name="email"
               type="email"
               value={data.email}
-              placeholder="Email Address"
+              placeholder="Your email address"
               className=""
               onChange={actions.onChange}
             />
             <Form
               id="phone"
               name="phone"
-              type="number"
+              type="tel"
               value={data.phone}
-              placeholder="Phone Number"
+              placeholder="Your contact number"
               className=""
               onChange={actions.onChange}
             />
           </div>
 
-          <div className="">
+          <div className="mx-auto">
             <Form
               id="projectIdea"
               name="projectIdea"
               type="textarea"
               value={data.projectIdea}
-              placeholder="Project Description"
-              className=" "
+              placeholder="Explain about your project idea"
+              className=""
               onChange={actions.onChange}
             />
           </div>

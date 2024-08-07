@@ -15,30 +15,29 @@ export const Form = (props) => {
 
   let pattern;
   if (type === 'email') pattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  if (type === 'number') pattern = /^[0-9]{10}$/;
+  if (type === 'tel') pattern = /^[0-9]{10}$/;
 
   const onChange = (event) => {
     const target = {
       target: {
         name: name,
-        value: event.target.value,
+        value: event.target.value || '',
       },
     };
 
-    if (type === 'email') {
-      if (!pattern.test(event.target.value)) setHasError(errorResponse);
-      else setHasError(null);
+    if (type !== 'email' && type !== 'tel') {
+      props.onChange(target);
     }
 
-    if (type === 'number') {
-      if (event.target.validity.valid) props.onChange(target);
-      if (!pattern.test(event.target.value)) {
-        setHasError(errorResponse);
-      } else {
-        setHasError(null);
-        props.onChange(target);
-      }
-    } else {
+    if (type === 'email') {
+      if (!pattern.test(event.target.value)) setHasError(Form.defaultProps.errorResponse = 'Enter valid email pattern');
+      else setHasError(null);
+      props.onChange(target);
+    }
+
+    if (type === 'tel') {
+      if (!pattern.test(event.target.value)) setHasError(Form.defaultProps.errorResponse = 'Enter valid phone number');
+      else setHasError(null);
       props.onChange(target);
     }
   };
@@ -60,7 +59,7 @@ export const Form = (props) => {
     );
   }
 
-  if (type === 'number') {
+  if (type === 'tel') {
     return (
       <div className="flex flex-col mb-6 mx-2 lg:mx-5 ">
         <input
