@@ -1,4 +1,5 @@
 /* eslint-disable linebreak-style */
+/* eslint-disable max-len */
 /* eslint-disable react/button-has-type */
 /* eslint-disable react/jsx-filename-extension */
 /* eslint-disable react/prop-types */
@@ -14,11 +15,11 @@ export default function Portfolio({ data }) {
   return (
     <section className="container mx-auto flex flex-col items-center ">
       <Fade direction="right" triggerOnce>
-        <h1 className="text-5xl text-theme-blue text-center font-bold">Our Selected Project</h1>
+        <h1 className="text-5xl text-theme-blue text-center font-bold">Our Featured Projects</h1>
       </Fade>
       <Fade direction="left" triggerOnce>
         <p className="font-light text-lg text-gray-400 text-center mb-12">
-          We are ready to scale up your business with our great work result.
+          Discover how WebMarket Craft has helped businesses like yours achieve remarkable growth. Our selected projects showcase our commitment to excellence and our ability to deliver outstanding results that drive business success.
         </p>
       </Fade>
 

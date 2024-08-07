@@ -1,4 +1,5 @@
 /* eslint-disable linebreak-style */
+/* eslint-disable max-len */
 /* eslint-disable react/jsx-filename-extension */
 /* eslint-disable import/extensions */
 import React from 'react';
@@ -18,12 +19,12 @@ export default function Hero() {
           Growing Your Business
           {' '}
           <br />
-          Is Our Calling
+          with Innovative Solutions
         </h1>
 
         <p className="font-light text-xl text-gray-400 leading-relaxed mb-16">
-          We provide developers & designers using latest technologies
-          to help you scale up your business.
+          At WebMarket Craft, we specialize in providing top-tier developers and designers who utilize the latest technologies to help your business grow and thrive. Scale up your business with our expert solutions.
+
         </p>
         <Fade direction="up" delay={500} triggerOnce>
           <Button href="/project" type="link" className="flex w-71 h-18 items-center px-14 py-5 text-white text-xl bg-theme-purple rounded-lg shadow-2xl hover:bg-dark-theme-purple transition duration-200">

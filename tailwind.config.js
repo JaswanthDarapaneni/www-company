@@ -33,6 +33,10 @@ module.exports = {
       '7xl': '5rem',
     },
     extend: {
+      screens: {
+        portrait: { raw: '(orientation: portrait)' },
+        landscape: { raw: '(orientation: landscape)' },
+      },
       colors: {
         'light-theme-purple': '#171721',
         'theme-purple': '#872b97',
@@ -48,6 +52,7 @@ module.exports = {
       },
       animation: {
         'bounce-x': 'bouncex 1s infinite',
+        ping: 'ping 1s cubic-bezier(0, 0, 0.2, 1)',
       },
       keyframes: {
         bouncex: {
@@ -67,6 +72,7 @@ module.exports = {
         192: '48rem',
         192.5: '49.5rem',
         193: '51rem',
+        99: '30rem',
       },
     },
   },
@@ -77,5 +83,6 @@ module.exports = {
     require('@tailwindcss/forms')({
       strategy: 'class',
     }),
+    require('postcss-import'),
   ],
 };

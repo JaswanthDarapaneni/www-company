@@ -14,7 +14,7 @@ section {
 }
 
 .header {
-  @apply flex fixed z-10 bg-white flex-col pt-2 mb-0 justify-between;
+  @apply flex fixed z-10 top-0 bg-white flex-col pt-2 mb-0 justify-between;
 }
 
 

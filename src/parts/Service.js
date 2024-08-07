@@ -2,6 +2,7 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable react/jsx-filename-extension */
 /* eslint-disable import/extensions */
+/* eslint-disable max-len */
 
 import React from 'react';
 
@@ -12,11 +13,13 @@ export default function Service({ data }) {
     <div className="bg-gray-50">
       <div className="container mx-auto pt-20 pb-28">
         <Fade direction="right" triggerOnce>
-          <h1 className="text-5xl text-theme-blue text-center font-bold">Our Service</h1>
+          <h1 className="text-5xl text-theme-blue text-center font-bold">Our Services</h1>
         </Fade>
         <Fade direction="left" triggerOnce>
+          {/* <p className="font-light text-lg text-gray-400 text-center mt-0">Driving Business Growth</p> */}
           <p className="font-light text-lg text-gray-400 text-center mb-12">
-            We are ready to scale up your business with our great service.
+            {/* We are ready to scale up your business with our great service. */}
+            WebMarket Craft offers a comprehensive range of services designed to elevate your business. From custom web development to cutting-edge design, we are committed to scaling your business with exceptional service and innovative solutions.
           </p>
         </Fade>
 

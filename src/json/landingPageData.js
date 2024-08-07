@@ -130,23 +130,23 @@ export const Portfolios = [
 
 export const Advantages = [
   [{
-    title: 'Communicative',
-    description: 'We communicate our project ideas and progress to make it clear.',
+    title: 'Effective Communication',
+    description: 'At WebMarket Craft, we ensure clear and consistent communication throughout your project, keeping you informed every step of the way.',
     imageUrl: Communicative,
   },
   {
-    title: 'Management',
-    description: 'We manage our project properly to make our project done well.',
+    title: 'Expert Project Management',
+    description: 'Our experienced project managers meticulously plan and execute each project to ensure timely and successful completion.',
     imageUrl: Management,
   }],
   [{
-    title: 'Collaborative​',
-    description: 'Our team are very collaborative to make our project done well.',
+    title: 'Collaborative Teamwork',
+    description: 'Our collaborative approach ensures that our team works seamlessly together to deliver the best results for your project.',
     imageUrl: Collaborative,
   },
   {
-    title: 'Favorite',
-    description: "We've did so many project and all of our client love it.",
+    title: 'Client Satisfaction',
+    description: 'With a proven track record of successful projects and satisfied clients, WebMarket Craft is the trusted choice for businesses looking to grow and succeed.',
     imageUrl: Favorite,
   }],
 ];
@@ -155,21 +155,21 @@ export const Testimonials = [
     id: 1,
     name: 'Sasha Rose',
     company: 'Owner, Surveyor Corps',
-    testimoni: 'Thanks for WebMarketCraft, you guys are the best! Keep up the great work!',
+    testimoni: 'Thanks to WebMarket Craft, our business has grown exponentially. You guys are the best! Keep up the fantastic work!',
     imageUrl: Sasha,
   },
   {
     id: 2,
     name: 'Kruger Khan',
     company: 'Director, Shultan Oil',
-    testimoni: 'I just wanted to let you know that it’s been great working with WebMarketCraft.',
+    testimoni: 'Working with WebMarket Craft has been a game-changer for us. Their expertise and dedication are unmatched.',
     imageUrl: Kruger,
   },
   {
     id: 3,
     name: 'Reiner John',
     company: 'CEO, Marley CO',
-    testimoni: 'WebMarketCraft is so great. Thank you so much for a job well done.',
+    testimoni: 'WebMarket Craft delivered exceptional results for our project. Thank you so much for a job well done.',
     imageUrl: Reiner,
   },
 ];

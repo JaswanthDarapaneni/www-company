@@ -56,8 +56,7 @@ export const DiscussForm = (actions) => {
   };
 
   return (
-    <section className="flex flex-col container mx-auto mt-10 justify-center">
-
+    <section className="flex flex-col container px-1 pt-20 justify-center">
       <Fade direction="down" triggerOnce>
         <h1 className="text-5xl text-theme-blue text-center font-bold">Lets Discuss</h1>
       </Fade>
@@ -65,19 +64,19 @@ export const DiscussForm = (actions) => {
       <Fade direction="up" triggerOnce>
         <p className="font-light text-lg text-gray-400 text-center mb-12">
           {/* eslint-disable-next-line react/no-unescaped-entities */}
-          Please fill out the form below to discuss your project and we'll get back to you in less than 24 hours.
+          We're excited to learn about your project! Fill out the form below, and our team will reach out to you within 24 hours to discuss your ideas in detail.
         </p>
       </Fade>
 
       <Fade direction="up" triggerOnce>
-        <div className="flex flex-col">
-          <div className="flex flex-col sm:flex-row mx-auto">
+        <div className="flex flex-col items-center ">
+          <div className="flex flex-col sm:flex-col p-4 py-0 xl:w-5/6 lg:w-4/6 w-full mx-auto">
             <Form
               id="name"
               name="name"
               type="text"
               value={data.name}
-              placeholder="Your name"
+              placeholder="Full Name"
               className=""
               onChange={actions.onChange}
             />
@@ -86,19 +85,19 @@ export const DiscussForm = (actions) => {
               name="company"
               type="text"
               value={data.company}
-              placeholder="Your company"
+              placeholder="Company Name"
               className=""
               onChange={actions.onChange}
             />
           </div>
 
-          <div className="flex flex-col sm:flex-row mx-auto">
+          <div className="flex flex-col sm:flex-col w-full xl:w-5/6 lg:w-4/6 p-4 mx-auto">
             <Form
               id="email"
               name="email"
               type="email"
               value={data.email}
-              placeholder="Your email address"
+              placeholder="Email Address"
               className=""
               onChange={actions.onChange}
             />
@@ -107,20 +106,20 @@ export const DiscussForm = (actions) => {
               name="phone"
               type="number"
               value={data.phone}
-              placeholder="Your contact number"
+              placeholder="Phone Number"
               className=""
               onChange={actions.onChange}
             />
           </div>
 
-          <div className="mx-auto">
+          <div className="">
             <Form
               id="projectIdea"
               name="projectIdea"
               type="textarea"
               value={data.projectIdea}
-              placeholder="Explain about your project idea"
-              className=""
+              placeholder="Project Description"
+              className=" "
               onChange={actions.onChange}
             />
           </div>
