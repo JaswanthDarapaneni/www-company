@@ -91,7 +91,7 @@ export const DiscussForm = (actions) => {
             />
           </div>
 
-          <div className="flex flex-col sm:flex-col w-full xl:w-5/6 lg:w-4/6 p-4 mx-auto">
+          <div className="flex flex-col sm:flex-col w-full xl:w-4/5 lg:w-4/5 p-4 mx-auto">
             <Form
               id="email"
               name="email"
