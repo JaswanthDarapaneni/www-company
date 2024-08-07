@@ -14,7 +14,7 @@ module.exports = {
   darkMode: 'selector',
   theme: {
     fontFamily: {
-      sans: ['Poppins', ..._fontFamily.serif],
+      sans: ['Poppins', ..._fontFamily.sans],
     },
     fontSize: {
       xs: '.75rem',

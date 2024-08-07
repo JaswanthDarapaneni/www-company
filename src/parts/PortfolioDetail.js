@@ -1,4 +1,5 @@
 /* eslint-disable linebreak-style */
+/* eslint-disable react/no-array-index-key */
 /* eslint-disable import/extensions */
 /* eslint-disable max-len */
 /* eslint-disable react/jsx-filename-extension */
@@ -14,7 +15,7 @@ import Button from 'elements/Button';
 export default function PortfolioDetail({ data }) {
   if (data === null) {
     return (
-      <section className="container mt-20 mx-auto mt-20">
+      <section className="container mx-auto mt-20">
         <Fade bottom triggerOnce>
           <div className="flex flex-col w-full justify-center">
             <div className="flex w-full justify-center">
@@ -35,7 +36,7 @@ export default function PortfolioDetail({ data }) {
   }
 
   return (
-    <section className="container mx-auto">
+    <section className="container mx-auto mt-20">
       <Fade bottom>
         <Button type="link" href="/project" className="flex w-40 h-8 text-lg items-center ml-6 sm:ml-20 mt-8 font-light text-gray-400 hover:underline">
           <svg className="w-5 h-5 text-gray-400 mr-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -46,9 +47,9 @@ export default function PortfolioDetail({ data }) {
       </Fade>
 
       {
-        data.map((item) => (
+        data.map((item, index) => (
           <div className="flex flex-col mt-8 justify-center">
-            <Fade bottom triggerOnce>
+            <Fade bottom triggerOnce key={index}>
               <h1 className="text-5xl text-theme-blue text-center font-bold">{item.title}</h1>
 
               <p className="font-light text-xl text-gray-400 text-center mb-10">
