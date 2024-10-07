@@ -83,6 +83,6 @@ module.exports = {
     require('@tailwindcss/forms')({
       strategy: 'class',
     }),
-    require('postcss-import'),
+    // require('postcss-import'),
   ],
 };

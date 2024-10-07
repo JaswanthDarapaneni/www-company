@@ -16,8 +16,8 @@ export default function HeroPortfolio() {
           <h1 className="text-6xl text-theme-blue font-bold leading-tight mb-5">Portfolio</h1>
         </Fade>
         <Fade direction="up" triggerOnce delay={400}>
-          <p className="font-light text-xl text-gray-400 leading-relaxed">
-            As a Software House that designs and develops websites, mobile apps, and SEO Marketing, we have been trusted by our clients from all around the world.
+          <p className="font-light text-xl text-gray-400 xl:text-gray-400 xl:font-normal leading-relaxed">
+            {process.env.REACT_APP_ORGANIZATION_FEATURED_PROJECTS_HERO_SUB_TITLE ? process.env.REACT_APP_ORGANIZATION_FEATURED_PROJECTS_HERO_SUB_TITLE : 'Discover our portfolio of successful projects, showcasing our expertise and innovation in software development.'}
           </p>
         </Fade>
       </div>

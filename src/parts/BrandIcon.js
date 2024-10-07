@@ -15,14 +15,15 @@ export default function BrandIcon() {
         href="/"
       >
         <div className="text-theme-blue text-3xl font-medium ">
-          Web
-          <span className="text-theme-purple">Market</span>
+          {process.env.REACT_APP_ORGANIZATION_ICON_NAME}
+
+          <span className="text-theme-purple">{process.env.REACT_APP_ORGANIZATION_ICON_SUB_NAME}</span>
           <span className="text-theme-purple text-sm">
             {' '}
-            Craft
+            {/* Technologies */}
           </span>
           <div className="tagline pt-0 text-xs theme-gray text-x font-light">
-            Your Satisfaction, Our Craft
+            {process.env.REACT_APP_ORGANIZATION_ICON_SUB_HEADING}
           </div>
         </div>
       </Button>

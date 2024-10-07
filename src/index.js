@@ -6,12 +6,12 @@ import { HelmetProvider } from 'react-helmet-async';
 
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { BrowserRouter, RouterProvider } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 const content = ' E-commerce Platform, Affordable Website Builders, Website Design Services, Digital Dream ,Website Creators,Creativity Professional Website Design, Website Building Platforms, Web Development Services, Digital Success, Best Website Builders, Build Something Amazing, Unique Needs, My Site, mission';
-
+console.log(content);
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>

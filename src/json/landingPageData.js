@@ -131,7 +131,7 @@ export const Portfolios = [
 export const Advantages = [
   [{
     title: 'Effective Communication',
-    description: 'At WebMarket Craft, we ensure clear and consistent communication throughout your project, keeping you informed every step of the way.',
+    description: 'At RapenTechnologies, we ensure clear and consistent communication throughout your project, keeping you informed every step of the way.',
     imageUrl: Communicative,
   },
   {
@@ -146,7 +146,7 @@ export const Advantages = [
   },
   {
     title: 'Client Satisfaction',
-    description: 'With a proven track record of successful projects and satisfied clients, WebMarket Craft is the trusted choice for businesses looking to grow and succeed.',
+    description: 'With a proven track record of successful projects and satisfied clients, RapenTechnologies is the trusted choice for businesses looking to grow and succeed.',
     imageUrl: Favorite,
   }],
 ];
@@ -155,21 +155,21 @@ export const Testimonials = [
     id: 1,
     name: 'Sasha Rose',
     company: 'Owner, Surveyor Corps',
-    testimoni: 'Thanks to WebMarket Craft, our business has grown exponentially. You guys are the best! Keep up the fantastic work!',
+    testimoni: 'Thanks to RapenTechnologies, our business has grown exponentially. You guys are the best! Keep up the fantastic work!',
     imageUrl: Sasha,
   },
   {
     id: 2,
     name: 'Kruger Khan',
     company: 'Director, Shultan Oil',
-    testimoni: 'Working with WebMarket Craft has been a game-changer for us. Their expertise and dedication are unmatched.',
+    testimoni: 'Working with RapenTechnologies has been a game-changer for us. Their expertise and dedication are unmatched.',
     imageUrl: Kruger,
   },
   {
     id: 3,
     name: 'Reiner John',
     company: 'CEO, Marley CO',
-    testimoni: 'WebMarket Craft delivered exceptional results for our project. Thank you so much for a job well done.',
+    testimoni: 'RapenTechnologies delivered exceptional results for our project. Thank you so much for a job well done.',
     imageUrl: Reiner,
   },
 ];

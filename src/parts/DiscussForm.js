@@ -10,14 +10,13 @@ import React from 'react';
 
 import { Fade } from 'react-awesome-reveal';
 // eslint-disable-next-line import/no-extraneous-dependencies
-import * as emailjs from '@emailjs/browser';
-// eslint-disable-next-line import/no-extraneous-dependencies
 import { ToastContainer, toast } from 'react-toastify';
 // eslint-disable-next-line import/no-extraneous-dependencies
 import 'react-toastify/dist/ReactToastify.css';
 
 import { Form } from 'elements/Form';
 import Button from 'elements/Button';
+import axios from 'axios';
 
 export const DiscussForm = (actions) => {
   const { data, resetForm } = actions;
@@ -26,12 +25,6 @@ export const DiscussForm = (actions) => {
       name, company, email, phone, projectIdea,
     } = data;
 
-    const templateParams = {
-      from_name: `${name} - ${company} ( ${phone} - ${email} )`,
-      to_name: 'WebMarketCraft',
-      message: projectIdea,
-    };
-
     if (
       email !== ''
       && company !== ''
@@ -39,12 +32,7 @@ export const DiscussForm = (actions) => {
       && phone !== ''
       && projectIdea !== ''
     ) {
-      emailjs.send(
-        'service_h4gtndg',
-        'template_a9tvs7a',
-        templateParams,
-        'user_csqIxzN5mKsl1yw4ffJzV',
-      )
+      axios.post(process.env.REACT_APP_ORGANIZATION_API_URL_EMAIL_SERVICE, data)
         .then(() => {
           toast.success('Success! we\'\ll get back to you soon. Thank you!');
           resetForm();

@@ -25,7 +25,7 @@ export default function Discuss() {
             </Fade>
           </div>
           <Fade delay={300} triggerOnce>
-            <p className="font-light p-5 sm:p-0 text-lg sm:text-xl lg:text-2xl xl:text-xl mb-1">Share your vision with us, and let's turn your dream software into reality. Partner with WebMarket Craft for unparalleled expertise and innovation.</p>
+            <p className="font-light p-5 sm:p-0 text-lg sm:text-xl lg:text-2xl xl:text-xl mb-1">Share your vision with us, and let's turn your dream software into reality. Partner with {process.env.REACT_APP_ORGANIZATION_NAME} for unparalleled expertise and innovation.</p>
           </Fade>
         </div>
       </section>

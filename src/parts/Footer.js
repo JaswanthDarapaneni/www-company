@@ -15,32 +15,35 @@ export default function Footer() {
           <div className=" md:w-1/3 flex-col landscape:ml-0 lg:landscape:ml-16 landscape:w-full  ml-16 mr-8 sm:w-full">
             <BrandIcon />
             {' '}
-            <p className=" text-lg text-gray-400 font-light">
-              Growing Your Business
-              {' '}
-              <br />
+            {/* <p className=" text-lg text-gray-400 font-light">
+
               with Innovative Solutions
-            </p>
+            </p> */}
           </div>
           <div className="w-1/3 mt-0 ml-16 mr-0 sm:ml-0 sm:mr-5">
             <h1 className="text-lg text-theme-blue pt-4 pb-2">
               Office
             </h1>
             <p className="text-lg text-gray-400 font-light">
-              India,
+              {process.env.REACT_APP_ORGANIZATION_PLACED}
               <br />
-              Andrapradesh, Srikalahasti
+              {process.env.REACT_APP_ORGANIZATION_WORK_LOCATION}
             </p>
           </div>
           <div className="w-1/3 mt-0 ml-16 mr-0 sm:ml-0 sm:mr-5 landscape:mr-16 ">
             <h1 className="text-lg text-theme-blue pt-4 pb-2">
               Contact Us
             </h1>
+            <Button
+              href={`mailto:${process.env.REACT_APP_ORGANIZATION_EMAIL}`}
+            >
+              <p className="text-lg text-gray-400 font-light">
+                {process.env.REACT_APP_ORGANIZATION_EMAIL}
+              </p>
+            </Button>
+
             <p className="text-lg text-gray-400 font-light">
-              webmarketcraft.@webmarketcraft.com
-            </p>
-            <p className="text-lg text-gray-400 font-light">
-              {/* Phone: 8688175159 */}
+              {process.env.REACT_APP_ORGANIZATION_NUMBER}
             </p>
           </div>
 
@@ -48,22 +51,22 @@ export default function Footer() {
             <h1 className="text-lg text-theme-blue pt-4 pb-2">
               Social
             </h1>
-            <Button href="https://www.instagram.com/mr.jashu_jk_2k/" type="link" target="_blank" className="flex text-lg text-gray-400 font-light hover:underline" isExternal>
+            <Button href={process.env.REACT_APP_ORGANIZATION_INSTA} type="link" target="_blank" className="flex text-lg text-gray-400 font-light hover:underline" isExternal>
               Instagram
             </Button>
-            <Button href="https://in.linkedin.com/in/jaswanth-darapaneni-170a08231" type="link" target="_blank" className="flex text-lg text-gray-400 font-light hover:underline" isExternal>
+            <Button href={process.env.REACT_APP_ORGANIZATION_LINKEDIN} type="link" target="_blank" className="flex text-lg text-gray-400 font-light hover:underline" isExternal>
               LinkedIn
             </Button>
-            <Button href="https://github.com/JaswanthDarapaneni" type="link" target="_blank" className="flex text-lg text-gray-400 font-light hover:underline" isExternal>
+            {/* <Button href="https://github.com/JaswanthDarapaneni" type="link" target="_blank" className="flex text-lg text-gray-400 font-light hover:underline" isExternal>
               Github
-            </Button>
+            </Button> */}
           </div>
         </div>
         <div className="flex-col text-center mt-7">
           <p className="text-lg text-gray-400 font-light">
             Copyright 2024 - All rights reserved -
-            <Button href="https://github.com/JaswanthDarapaneni" type="link" target="_blank" className="text-lg text-theme-purple font-light" isExternal>
-              WebMarketCraft
+            <Button href="/" type="link" target="_blank" className="text-lg text-theme-purple font-light" isExternal>
+              {process.env.REACT_APP_ORGANIZATION_NAME}
             </Button>
           </p>
           <div className="flex-row">

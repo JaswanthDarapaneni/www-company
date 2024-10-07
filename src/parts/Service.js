@@ -17,9 +17,9 @@ export default function Service({ data }) {
         </Fade>
         <Fade direction="left" triggerOnce>
           {/* <p className="font-light text-lg text-gray-400 text-center mt-0">Driving Business Growth</p> */}
-          <p className="font-light text-lg text-gray-400 text-center mb-12">
+          <p className="font-light text-lg text-gray-400 xl:text-gray-400 xl:font-normal text-center mb-12">
             {/* We are ready to scale up your business with our great service. */}
-            WebMarket Craft offers a comprehensive range of services designed to elevate your business. From custom web development to cutting-edge design, we are committed to scaling your business with exceptional service and innovative solutions.
+            {process.env.REACT_APP_ORGANIZATION_SERVICES_SUBTITLE ? process.env.REACT_APP_ORGANIZATION_SERVICES_SUBTITLE : 'WebMarket Craft offers a comprehensive range of services designed to elevate your business. From custom web development to cutting-edge design, we are committed to scaling your business with exceptional service and innovative solutions'}
           </p>
         </Fade>
 

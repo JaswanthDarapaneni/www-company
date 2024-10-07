@@ -42,11 +42,11 @@ export default function Header() {
         </li>
         <li className="py-2 lg:py-0">
           <Button
-            className={`${path === '/team' ? 'active-link' : ''} font-medium text-lg px-5 no-underline hover:underline`}
+            className={`${path === '/AboutUs' ? 'active-link' : ''} font-medium text-lg px-5 no-underline hover:underline`}
             type="link"
-            href="/team"
+            href="/AboutUs"
           >
-            Team
+            About Us
           </Button>
         </li>
         <li className="py-2 lg:py-0">
@@ -93,13 +93,14 @@ export default function Header() {
             </li>
             <li className="py-2 bg-white">
               <Button
-                className={`${path === '/team' ? 'active-link' : ''} font-medium px-10 no-underline hover:underline`}
+                className={`${path === '/AboutUs' ? 'active-link' : ''} font-medium px-10 no-underline hover:underline`}
                 type="link"
-                href="/team"
+                href="/AboutUs"
               >
-                Team
+                About Us
               </Button>
             </li>
+
             <li className="py-2 bg-white">
               <Button
                 className={`${path === '/project' ? 'active-link' : ''} font-medium px-10 no-underline hover:underline`}
