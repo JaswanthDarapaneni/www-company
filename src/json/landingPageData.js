@@ -39,8 +39,6 @@ import Mobile2 from '../assets/images/TeamMembers/Mobile2.jpg';
 import UIUX1 from '../assets/images/TeamMembers/UIUX1.jpg';
 import UIUX2 from '../assets/images/TeamMembers/UIUX2.jpg';
 
-const companyName = 'WebMarketCraft';
-
 export const Services = [
   {
     title: 'Web Development',

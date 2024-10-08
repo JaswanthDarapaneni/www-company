@@ -19,7 +19,7 @@ export default function Portfolio({ data }) {
       </Fade>
       <Fade direction="left" triggerOnce>
         <p className="font-light text-lg text-gray-400 xl:text-gray-400 xl:font-normal text-center mb-12">
-          {process.env.REACT_APP_ORGANIZATION_FEATURED_PROJECTS_SUBTITLE ? process.env.REACT_APP_ORGANIZATION_FEATURED_PROJECTS_SUBTITLE : ' Discover how WebMarket Craft has helped businesses like yours achieve remarkable growth. Our selected projects showcase our commitment to excellence and our ability to deliver outstanding results that drive business success. '}
+          {process.env.REACT_APP_ORGANIZATION_FEATURED_PROJECTS_SUBTITLE ? process.env.REACT_APP_ORGANIZATION_FEATURED_PROJECTS_SUBTITLE : ' Discover how Rapen Technologies has helped businesses like yours achieve remarkable growth. Our selected projects showcase our commitment to excellence and our ability to deliver outstanding results that drive business success. '}
         </p>
       </Fade>
 

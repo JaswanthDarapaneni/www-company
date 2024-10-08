@@ -15,7 +15,7 @@ export default function Advantage({ data }) {
         <Fade bottom triggerOnce>
           <h1 className="text-5xl text-theme-blue text-center  font-bold">Why Choose {process.env.REACT_APP_ORGANIZATION_NAME} for Your Projects</h1>
           <p className="font-light text-lg text-gray-400 xl:text-gray-400 xl:font-normal text-center mb-12 sm:mb-5 xl:mb-0">
-            {process.env.REACT_APP_ORGANIZATION_ADVANTAGE_SUBTITLE ? process.env.REACT_APP_ORGANIZATION_ADVANTAGE_SUBTITLE : ' Discover why WebMarket Craft is the ideal choice for your next project. Our team of experts is dedicated to delivering exceptional results that exceed your expectations. With our commitment to excellence and attention to detail, we are confident that we can help you achieve your goals and take your business to the next level. '}
+            {process.env.REACT_APP_ORGANIZATION_ADVANTAGE_SUBTITLE ? process.env.REACT_APP_ORGANIZATION_ADVANTAGE_SUBTITLE : ' Discover why Rapen Technologies is the ideal choice for your next project. Our team of experts is dedicated to delivering exceptional results that exceed your expectations. With our commitment to excellence and attention to detail, we are confident that we can help you achieve your goals and take your business to the next level. '}
           </p>
         </Fade>
 
