@@ -4,6 +4,7 @@
 /* eslint-disable react/react-in-jsx-scope */
 /* eslint-disable-next-line no-unused-vars */
 import { Route, Routes } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 
 import LandingPage from 'pages/LandingPage';
 import ProjectPage from 'pages/ProjectPage';
@@ -18,6 +19,12 @@ import AboutUsPage from 'pages/AboutUsPage';
 function App() {
   return (
     <>
+      <Helmet>
+        <title>{process.env.REACT_APP_ORGANIZATION_TITLE}</title>
+        <meta name="description" content={process.env.REACT_APP_ORGANIZATION_DESCRIPTION} />
+        <meta name="keywords" content={process.env.REACT_APP_ORGANIZATION_KEYWORDS} />
+      </Helmet>
+
       <Routes>
         <Route exact path="/" element={<LandingPage />} />
         <Route path="/project" element={<ProjectPage />} />

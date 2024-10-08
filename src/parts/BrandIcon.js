@@ -7,6 +7,7 @@ import React from 'react';
 import Button from '../elements/Button';
 import logo from '../assets/images/logo-main.png';
 
+
 export default function BrandIcon() {
   return (
     <div>
