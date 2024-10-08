@@ -25,14 +25,16 @@ export default class LandingPage extends Component {
   render() {
     return (
       <>
-        <Header />
-        <Hero />
-        <Service data={Services} />
-        <Portfolio data={Portfolios} />
-        <Advantage data={Advantages} />
-        {/* <Testimonial data={Testimonials} /> */}
-        <Discuss />
-        <Footer />
+        <div className="grid">
+          <Header />
+          <Hero />
+          <Service data={Services} />
+          <Portfolio data={Portfolios} />
+          <Advantage data={Advantages} />
+          {/* <Testimonial data={Testimonials} /> */}
+          <Discuss />
+          <Footer />
+        </div>
       </>
     );
   }

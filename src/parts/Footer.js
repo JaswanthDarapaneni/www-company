@@ -12,7 +12,7 @@ export default function Footer() {
     <div className="bg-gray-50 border-t border-gray-200 pb-6">
       <div className="container flex-col mx-auto ">
         <div className="flex flex-col sm:flex-row mt-8 justify-center">
-          <div className=" md:w-1/3 flex-col landscape:ml-0 lg:landscape:ml-16 landscape:w-full  ml-16 mr-8 sm:w-full">
+          <div className=" md:w-1/3 flex-col landscape:ml-0 lg:landscape:ml-0 landscape:w-full  ml-0 mr-8 sm:w-full">
             <BrandIcon />
             {' '}
             {/* <p className=" text-lg text-gray-400 font-light">
