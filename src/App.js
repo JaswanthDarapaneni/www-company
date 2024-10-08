@@ -3,7 +3,7 @@
 /* eslint-disable react/jsx-filename-extension */
 /* eslint-disable react/react-in-jsx-scope */
 /* eslint-disable-next-line no-unused-vars */
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes, Navigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 
 import LandingPage from 'pages/LandingPage';
@@ -31,7 +31,8 @@ function App() {
         <Route exact path="/project/:id" element={<ProjectDetailPage />} />
         <Route exact path="/AboutUs" element={<AboutUsPage />} />
         <Route exact path="/discuss-project" element={<DiscussProjectPage />} />
-        <Route path="**" element={<NotFoundPage />} />
+        <Route path="*" element={<Navigate to="/not-found" />} />
+        <Route path="/not-found" element={<NotFoundPage />} />
       </Routes>
     </>
   );
